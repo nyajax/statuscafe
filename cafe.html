@@ -1,0 +1,477 @@
+<style>
+  @import url(https://fonts.bunny.net/css?family=ubuntu-mono:400|workbench:400);
+
+  body {
+    background-color: #1c1a19;
+    image-rendering: pixelated;
+    background-image: url(https://files.catbox.moe/3ot2fi.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    max-width: 100%;
+    cursor: url(https://files.catbox.moe/p4i59r.png), default;
+    overscroll-behavior: none;
+    max-width: 400px;
+    padding: 15px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 12px;
+
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  section:first-of-type {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    position: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+    color: rgb(0, 0, 0)
+  }
+
+  .cols {
+    display: block;
+  }
+
+  #homepagebtn {
+    transition: 0.2s ease-in;
+  }
+
+  img {
+    transition: 0.2s ease-in;
+  }
+
+  nav h1,
+  nav h2,
+  nav span {
+    color: black !important;
+  }
+
+  a:link {
+    color: black;
+
+    font-size: 12px;
+
+    text-decoration: none;
+  }
+
+  dt {
+    display: none;
+  }
+
+  a:visited {
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  a:active {
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  nav {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    height: 100px;
+    width: 60%;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  }
+
+  nav a:first-of-type {
+    pointer-events: none;
+    font-family: 'Workbench', monospace;
+    color: rgb(0, 0, 0);
+  }
+
+  nav a:first-of-type::after {
+    font-family: 'Ubuntu', monospace;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 12px;
+    margin-top: 2px;
+    padding-bottom: 2px;
+    content: "meowmen & barkboys enjoyer <3";
+
+  }
+
+  nav a {
+    padding: 0 1px 0 1px;
+    text-decoration: none;
+    color: black
+  }
+
+
+  nav a:last-of-type:before {
+    content: none;
+
+  }
+
+  nav a:last-of-type:hover::before {
+    content: "";
+  }
+
+  nav a:last-of-type:focus::before {
+    content: "";
+  }
+
+  nav a:first-of-type {
+    padding: 5px;
+    display: block;
+    font-size: 250%;
+  }
+
+  nav a:first-of-type:hover::before {
+    content: none;
+  }
+
+  nav a:first-of-type:focus::before {
+    content: none;
+  }
+
+  nav a:first-of-type:before {
+    content: none;
+  }
+
+  .email {
+    display: none;
+  }
+
+  [href="/users/nyajax.atom"] {
+    display: none;
+  }
+
+  .about {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    width: 60%;
+    max-height: 120px;
+    max-width: 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .about a {
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  }
+
+  .about img {
+    max-width: 150%;
+    height: auto;
+    display: block;
+  }
+
+  .profile-picture {
+    max-width: auto;
+    position: center;
+    border: 0.5px rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  #profilepic {
+    background-image: url(https://files.catbox.moe/jh83a2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    image-rendering: initial;
+    display: block;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-top: 10px;
+    transition: 0.2s ease-in;
+  }
+
+  .status-username a {
+    color: #974339;
+  }
+
+  .status-username {
+    font-size: 13px;
+    text-transform: lowercase;
+    color: #974339;
+  }
+
+  .status-username:before {
+    content: "( ";
+  }
+
+  .status-username:after {
+    content: " )";
+  }
+
+  .status a {
+    text-transform: initial;
+    color: black;
+    margin: 20px;
+  }
+
+  .status a:hover {
+    color: #ed3a24;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease-out;
+    text-decoration-line: none;
+
+  }
+
+  .status:first-of-type {
+    border-left: 3px double black;
+    background: linear-gradient(to right, #95b2fe, transparent 95%);
+    padding: 8px;
+    font-size: 12px;
+    display: block;
+  }
+
+  .status:nth-of-type(2) {
+    display: block;
+    filter: opacity(90%);
+    font-size: 12px;
+  }
+
+  .status:nth-of-type(3) {
+    display: block;
+    filter: opacity(90%);
+    font-size: 12px;
+  }
+
+  .status:nth-of-type(4) {
+    display: block;
+    filter: opacity(70%);
+    font-size: 12px;
+  }
+
+  .status:nth-of-type(5) {
+    display: block;
+    filter: opacity(70%);
+    font-size: 12px;
+  }
+
+  .status:nth-of-type(6) {
+    display: block;
+    filter: opacity(50%);
+    font-size: 12px;
+  }
+
+  .status:nth-of-type(7) {
+    display: block;
+    filter: opacity(50%);
+    font-size: 12px;
+  }
+
+  .status:nth-of-type(8) {
+    display: block;
+    filter: opacity(35%);
+    font-size: 12px;
+  }
+
+  .status:nth-of-type(9) {
+    display: block;
+    filter: opacity(35%);
+    font-size: 12px;
+  }
+
+  .status:nth-of-type(10) {
+    display: block;
+    filter: opacity(25%);
+    font-size: 12px;
+  }
+
+  .status {
+    display: none;
+  }
+
+  .homepage {
+    display: none;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  nav>a:hover {
+    color: #ed3a24;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease-out;
+    text-decoration-line: none;
+    cursor: pointer;
+  }
+
+  section:last-of-type {
+    max-width: 75%;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+
+  }
+
+  section:last-of-type h2 {
+    display: none;
+  }
+
+  .status a:hover::before {
+    content: none;
+  }
+
+  section:last-of-type>p>a:last-of-type {
+    font-family: 'Workbench', monospace;
+  }
+
+  section:last-of-type {
+    max-width: 100%;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+
+  }
+
+  @media (min-width: 400px) {
+    .cols {
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 10px;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+
+    section:first-of-type {
+      background-color: #ffffff;
+      position: center;
+      margin: 20px auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 15px;
+      width: 75%;
+      max-width: 450px;
+      text-align: center;
+      box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    }
+
+    section {
+      background-color: #ffffff;
+      position: center;
+      margin: auto;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+
+
+    }
+
+    section:first-child {
+      height: relative;
+      position: center;
+      margin-right: 0;
+      margin: 20px auto;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      box-sizing: border-box;
+    }
+
+    section:last-child {
+      section:last-child::-webkit-scrollbar {
+        display: none;
+      }
+
+      margin: auto;
+      height: 400px;
+      box-shadow:inset -1px -1px black,
+      inset 1px 1px #dfdfdf,
+      inset -2px -2px grey,
+      inset 2px 2px white;
+      background-size: cover;
+      overflow-y: scroll;
+      padding-right: 15px;
+    }
+  }
+</style>
+
+lars/ajax | 23yo | he/him | nl/en
+<p>
+catboy nerd | compsci student | i &lt;3 rhys
+<img src="https://files.catbox.moe/sfjetg.gif">
