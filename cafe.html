@@ -9,7 +9,7 @@
   body {
     background-color: #1c1a19;
     image-rendering: pixelated;
-    background-image: url(https://files.catbox.moe/3ot2fi.jpg);
+    background-image: url(https://files.catbox.moe/lhqoe9.png);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: repeat;
@@ -19,7 +19,7 @@
     overscroll-behavior: none;
     max-width: 400px;
     padding: 15px;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Ubuntu-Mono', monospace;
     font-size: 12px;
 
     animation: fadeIn 5s;
@@ -143,8 +143,15 @@
     padding-right: 5px;
     font-size: 12px;
     background-color: #ffffff;
+    border-radius: 5px;
     box-sizing: border-box;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+ filter: drop-shadow(0 1px #F3A97A) drop-shadow(1px 0 #F3A97A)
+      drop-shadow(0 -1px #F3A97A) drop-shadow(-1px 0 #F3A97A)
+      drop-shadow(0 1px white) drop-shadow(1px 0 white)
+      drop-shadow(0 -1px white) drop-shadow(-1px 0 white)
+      drop-shadow(0 2px #F3A97A) drop-shadow(2px 0 #F3A97A)
+      drop-shadow(0 -2px #F3A97A) drop-shadow(-2px 0 #F3A97A)
+      drop-shadow(1px 1px 0 #1B0605) drop-shadow(-1px 1px 0 #1B0605);
   }
 
   nav a:first-of-type {
@@ -154,7 +161,7 @@
   }
 
   nav a:first-of-type::after {
-    font-family: 'Ubuntu', monospace;
+    font-family: 'Ubuntu-Mono', monospace;
     text-align: center;
     color: rgb(0, 0, 0);
     display: block;
@@ -207,32 +214,39 @@
     display: none;
   }
 
-  [href="/users/nyajax.atom"] {
-    display: none;
-  }
+    [href="/users/nyajax.atom"] {
+        display: none;
+    }
 
   .about {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: 5px;
     text-align: center;
     padding-top: 10px;
     padding-right: 5px;
     padding-left: 5px;
-    padding-bottom: 0px;
-    margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 10px;
     color: rgb(0, 0, 0);
-    width: 60%;
-    max-height: 120px;
-    max-width: 150px;
+    width: 100px;
+    height: 120px;
     box-sizing: border-box;
     overflow: hidden;
+    font-family: 'Ubuntu-Mono', monospace;
   }
 
   .about a {
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+display: inline-block;
+text-decoration: none;
+}
+
+  .about a:hover {
+    color: #ed3a24;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease-out;
+    text-decoration-line: none;
+    cursor: pointer;
   }
 
   .about img {
@@ -261,7 +275,6 @@
     width: auto;
     height: auto;
     margin-left: auto;
-    margin-bottom: 5px;
     margin-right: auto;
     margin-top: 10px;
     transition: 0.2s ease-in;
@@ -301,7 +314,7 @@
   }
 
   .status:first-of-type {
-    border-left: 3px double black;
+    border-left: 3px double #ed3a24;
     background: linear-gradient(to right, #95b2fe, transparent 95%);
     padding: 8px;
     font-size: 12px;
@@ -389,8 +402,14 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-
+    border-radius: 5px;
+    filter: drop-shadow(0 1px #F3A97A) drop-shadow(1px 0 #F3A97A)
+      drop-shadow(0 -1px #F3A97A) drop-shadow(-1px 0 #F3A97A)
+      drop-shadow(0 1px white) drop-shadow(1px 0 white)
+      drop-shadow(0 -1px white) drop-shadow(-1px 0 white)
+      drop-shadow(0 2px #F3A97A) drop-shadow(2px 0 #F3A97A)
+      drop-shadow(0 -2px #F3A97A) drop-shadow(-2px 0 #F3A97A)
+      drop-shadow(1px 1px 0 #1B0605) drop-shadow(-1px 1px 0 #1B0605);
   }
 
   section:last-of-type h2 {
@@ -403,12 +422,6 @@
 
   section:last-of-type>p>a:last-of-type {
     font-family: 'Workbench', monospace;
-  }
-
-  section:last-of-type {
-    max-width: 100%;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-
   }
 
   @media (min-width: 400px) {
@@ -426,10 +439,19 @@
       padding-left: 10px;
       padding-right: 10px;
       margin-bottom: 15px;
-      width: 75%;
-      max-width: 450px;
+      width: 80%;
+      max-width: 150px;
+      max-height: auto;
       text-align: center;
-      box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+      border-radius: 5px;
+      font-size: 8px;
+      filter: drop-shadow(0 1px #F3A97A) drop-shadow(1px 0 #F3A97A)
+      drop-shadow(0 -1px #F3A97A) drop-shadow(-1px 0 #F3A97A)
+      drop-shadow(0 1px white) drop-shadow(1px 0 white)
+      drop-shadow(0 -1px white) drop-shadow(-1px 0 white)
+      drop-shadow(0 2px #F3A97A) drop-shadow(2px 0 #F3A97A)
+      drop-shadow(0 -2px #F3A97A) drop-shadow(-2px 0 #F3A97A)
+      drop-shadow(1px 1px 0 #1B0605) drop-shadow(-1px 1px 0 #1B0605);
     }
 
     section {
@@ -440,13 +462,18 @@
       padding-right: 5px;
       padding-top: 5px;
       padding-bottom: 5px;
-      box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-
-
+      filter: drop-shadow(0 1px #F3A97A) drop-shadow(1px 0 #F3A97A)
+      drop-shadow(0 -1px #F3A97A) drop-shadow(-1px 0 #F3A97A)
+      drop-shadow(0 1px white) drop-shadow(1px 0 white)
+      drop-shadow(0 -1px white) drop-shadow(-1px 0 white)
+      drop-shadow(0 2px #F3A97A) drop-shadow(2px 0 #F3A97A)
+      drop-shadow(0 -2px #F3A97A) drop-shadow(-2px 0 #F3A97A)
+      drop-shadow(1px 1px 0 #1B0605) drop-shadow(-1px 1px 0 #1B0605);
     }
 
     section:first-child {
       height: relative;
+      max-height: 225px;
       position: center;
       margin-right: 0;
       margin: 20px auto;
@@ -464,10 +491,6 @@
 
       margin: auto;
       height: 400px;
-      box-shadow:inset -1px -1px black,
-      inset 1px 1px #dfdfdf,
-      inset -2px -2px grey,
-      inset 2px 2px white;
       background-size: cover;
       overflow-y: scroll;
       padding-right: 15px;
@@ -475,7 +498,6 @@
   }
 </style>
 
-lars/ajax | 23yo | he/him | nl/en
+<a href="https://nyajax.nekoweb.org/">lars/ajax</a> | 24yo <br> he/him/his | nl/en
 <p>
-  catboy nerd | compsci student | i &lt;3 rhys
-  <img src="https://files.catbox.moe/sfjetg.gif">
+  catboy nerd, compsci student, trans & queer
